@@ -2,7 +2,7 @@ baseURL = "http://sinoridha.github.io"
 languageCode = "en-us"
 title = "Ridhar's Site"
 theme = "hyde"
-# publishDir= 'docs'
+publishDir= 'docs'
 
 [params]
 	description = 'Any things that need to writen'
