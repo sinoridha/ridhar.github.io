@@ -1,4 +1,4 @@
-baseURL = "http://sinoridha.github.io"
+baseURL = "https://sinoridha.github.io/ridhar.github.io/"
 languageCode = "en-us"
 title = "Ridhar's Site"
 theme = "hyde"
