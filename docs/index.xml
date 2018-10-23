@@ -6,10 +6,20 @@
     <description>Recent content on Ridhar&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 11:02:13 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 16:59:20 +0700</lastBuildDate>
     
 	<atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database Quran Indonesia</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</link>
+      <pubDate>Tue, 23 Oct 2018 16:59:20 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</guid>
+      <description>Kali ini saya mau berbagi database Al-Quran Indonesia yang mana sangat bermanfaat bagi rekan para developer aplikasi yang akan membuat aplikasi Al Quran Indonesia. Database ini masih berupa SQL scrip (.sql) yang di dalamnya akan melakukan proses create table dan insert saja.
+Membagi pengalaman saya dalam membuat aplikasi Zikir dan Quran, saat awal pengembangan aplikasi saya mengambil data Quran dari http://www.qurandatabase.org/. Akan tetapi masih ada beberapa kekurangan dimana ada harkat yang di baca panjang tapi tidak tertulis panjang, sepertinya layaknya Al-Quran cetakan Indonesia.</description>
+    </item>
     
     <item>
       <title>About Me</title>
