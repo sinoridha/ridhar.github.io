@@ -5,7 +5,7 @@ theme = "hyde"
 publishDir= 'docs'
 
 [params]
-	description = 'Any things that need to writen'
+	description = 'Any things that needs to be written'
 
 [menu]
   	[[menu.main]]
