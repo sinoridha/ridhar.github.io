@@ -1,0 +1,22 @@
+baseURL = "http://sinoridha.github.io"
+languageCode = "en-us"
+title = "Ridhar's Site"
+theme = "hyde"
+# publishDir= 'docs'
+
+[params]
+	description = 'Any things that need to writen'
+
+[menu]
+  	[[menu.main]]
+		identifier = "blog"
+		name = "About"
+		title = "blog section"
+		url = "/about/"
+		weight = 1
+	[[menu.main]]
+		identifier = "blog"
+		name = "Ridhar Studio"
+		title = "blog section"
+		url = "/ridhar-studio/"
+		weight = 1
