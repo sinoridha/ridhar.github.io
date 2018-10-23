@@ -12,7 +12,7 @@ publishDir= 'docs'
 	identifier = "about"
 	name = "About"
 	title = "blog section"
-	url = "/about"
+	url = "/about/"
 	weight = -110
 [[menu.main]]
 	identifier = "blog"

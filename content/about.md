@@ -6,7 +6,7 @@ draft: false
 
 Me, Ridha Ramadhansyah, a muslim and software engineer base on Jakarta, Indonesia.
 
-You will find my site write on this site.
+You will find my write on this site.
 
 Find Me:  
 sinoridha@gmail.com  
