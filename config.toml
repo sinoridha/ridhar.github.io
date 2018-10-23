@@ -8,15 +8,15 @@ publishDir= 'docs'
 	description = 'Any things that needs to be written'
 
 [menu]
-  	[[menu.main]]
-		identifier = "blog"
-		name = "About"
-		title = "blog section"
-		url = "/about/"
-		weight = 1
-	[[menu.main]]
-		identifier = "blog"
-		name = "Ridhar Studio"
-		title = "blog section"
-		url = "/ridhar-studio/"
-		weight = 1
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	title = "blog section"
+	url = "/about"
+	weight = -110
+[[menu.main]]
+	identifier = "blog"
+	name = "Ridhar Studio"
+	title = "blog section"
+	url = "/ridhar-studio/"
+	weight = -100

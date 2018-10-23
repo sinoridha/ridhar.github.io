@@ -4,7 +4,7 @@ date: 2018-10-23T11:02:13+07:00
 draft: false
 ---
 
-Hi, I build some app that exist on Play Stor (Android).
+Hi, I build some app that exist on Play Store (Android).
 
 *Check this:*
 
