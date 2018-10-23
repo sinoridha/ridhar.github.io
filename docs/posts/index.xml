@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ridhar&#39;s Site</title>
+    <link>http://sinoridha.github.io/posts/</link>
+    <description>Recent content in Posts on Ridhar&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Oct 2018 11:02:13 +0700</lastBuildDate>
+    
+	<atom:link href="http://sinoridha.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://sinoridha.github.io/posts/my-first-post/</link>
+      <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
+      
+      <guid>http://sinoridha.github.io/posts/my-first-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Purus sit amet volutpat consequat mauris. Non odio euismod lacinia at quis. Volutpat odio facilisis mauris sit amet massa. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Non blandit massa enim nec dui nunc.</description>
+    </item>
+    
+  </channel>
+</rss>

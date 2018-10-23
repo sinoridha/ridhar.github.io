@@ -8,12 +8,23 @@
   </url>
   
   <url>
+    <loc>http://sinoridha.github.io/posts/my-first-post/</loc>
+    <lastmod>2018-10-23T11:02:13+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://sinoridha.github.io/ridhar-studio/</loc>
     <lastmod>2018-10-23T11:02:13+07:00</lastmod>
   </url>
   
   <url>
     <loc>http://sinoridha.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sinoridha.github.io/posts/</loc>
+    <lastmod>2018-10-23T11:02:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
