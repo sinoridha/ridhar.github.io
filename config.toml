@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Ridhar's Site"
 theme = "hyde"
 publishDir= 'docs'
+disqusShortname = "ridhar-com"
 
 [params]
 	description = 'Any things that needs to be written'
