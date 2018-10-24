@@ -4,6 +4,7 @@ title = "Ridhar's Site"
 theme = "hyde"
 publishDir= 'docs'
 disqusShortname = "ridhar-com"
+googleAnalytics = "UA-128028156-1"
 
 [params]
 	description = 'Any things that needs to be written'
