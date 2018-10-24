@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ridhar&#39;s Site</title>
-    <link>https://ridhar.com/</link>
+    <link>https://sinoridha.github.io/ridhar.github.io/</link>
     <description>Recent content on Ridhar&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Oct 2018 16:59:20 +0700</lastBuildDate>
     
-	<atom:link href="https://ridhar.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Database Quran Indonesia</title>
-      <link>https://ridhar.com/posts/database-quran-indonesia/</link>
+      <link>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</link>
       <pubDate>Tue, 23 Oct 2018 16:59:20 +0700</pubDate>
       
-      <guid>https://ridhar.com/posts/database-quran-indonesia/</guid>
+      <guid>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</guid>
       <description>Kali ini saya mau berbagi database Al-Quran Indonesia yang mana sangat bermanfaat bagi rekan para developer aplikasi yang akan membuat aplikasi Al Quran Indonesia. Database ini masih berupa SQL script (.sql) yang di dalamnya hanya melakukan proses create table dan insert saja.
 Membagi pengalaman saya dalam membuat aplikasi Zikir dan Quran, saat awal pengembangan aplikasi saya mengambil data Quran dari http://www.qurandatabase.org/. Akan tetapi masih ada beberapa kekurangan dimana ada harkat yang di baca panjang tapi tidak tertulis panjang, sepertinya layaknya Al-Quran cetakan Indonesia.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://ridhar.com/about/</link>
+      <link>https://sinoridha.github.io/ridhar.github.io/about/</link>
       <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
       
-      <guid>https://ridhar.com/about/</guid>
+      <guid>https://sinoridha.github.io/ridhar.github.io/about/</guid>
       <description>Me, Ridha Ramadhansyah, a muslim and software engineer base on Jakarta, Indonesia.
 You will find my write on this site.
 Find Me:
@@ -37,10 +37,10 @@ https://github.com/sinoridha</description>
     
     <item>
       <title>Ridhar Studio</title>
-      <link>https://ridhar.com/ridhar-studio/</link>
+      <link>https://sinoridha.github.io/ridhar.github.io/ridhar-studio/</link>
       <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
       
-      <guid>https://ridhar.com/ridhar-studio/</guid>
+      <guid>https://sinoridha.github.io/ridhar.github.io/ridhar-studio/</guid>
       <description>Hi, I build some app that exist on Play Store (Android).
 Check this:
 Zikir Indonesia - https://play.google.com/store/apps/details?id=com.zikirindonesia
