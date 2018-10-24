@@ -11,4 +11,4 @@ You will find my write on this site.
 Find Me:  
 sinoridha@gmail.com  
 https://www.linkedin.com/in/ridharamadhansyah/  
-https://github.com/sinoridhas  
+https://github.com/sinoridha  
