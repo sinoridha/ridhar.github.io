@@ -1,4 +1,4 @@
-baseURL = "https://sinoridha.github.io/ridhar.github.io/"
+baseURL = "https://ridhar.com"
 languageCode = "en-us"
 title = "Ridhar's Site"
 theme = "hyde"
@@ -11,12 +11,12 @@ publishDir= 'docs'
 [[menu.main]]
 	identifier = "about"
 	name = "About"
-	title = "blog section"
+	title = "About me"
 	url = "/about/"
 	weight = -110
 [[menu.main]]
 	identifier = "blog"
 	name = "Ridhar Studio"
-	title = "blog section"
+	title = "Ridhar Studio"
 	url = "/ridhar-studio/"
 	weight = -100
