@@ -17,4 +17,5 @@ Link download : quran-indonesia.sql - https://drive.google.com/file/d/1QOZBsllfE
 Oh iya karena rujukan awalnya adalah Al-Quran Kemenag, untuk font nya akan lebih cocok mengunakan font Al-Quran milik Kementrian Agama. Font nya bisa ambil langsung dari website resmi (https://quran.kemenag.go.id/index.php/about) atau langsung download ke  (http://quran.kemenag.go.id/app/source/FONT_STANDAR.zip)
 
 #### UPDATE (25 April 2019)
-Saya menerima feedback beberapa aplikasi yang mengunakan source ini tanpa mengunakan font bawaan dari Kemenag. Hal ini memungkinkan kesalahan Khat / tulisan, yang dapat menyebabkan kesalahan baca dan pengartian. Untuk memastikan implementasi source dan font sudah sesuai dapat mencocokan ke aplikasi yang saya buat: Zikir Indonesia https://play.google.com/store/apps/details?id=com.zikirindonesia
+Saya menerima feedback beberapa aplikasi yang mengunakan source ini tanpa mengunakan font bawaan dari Kemenag. Bisa juga di download di sini: https://drive.google.com/file/d/1QOZBsllfELIhoSJ8pUpeK18WTHe0Jfe2/view?usp=sharing .
+Hal ini memungkinkan kesalahan Khat / tulisan, yang dapat menyebabkan kesalahan baca dan pengartian. Untuk memastikan implementasi source dan font sudah sesuai dapat mencocokan ke aplikasi yang saya buat: Zikir Indonesia https://play.google.com/store/apps/details?id=com.zikirindonesia
