@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ridhar&#39;s Site</title>
+    <title>Ridha R</title>
     <link>https://sinoridha.github.io/ridhar.github.io/</link>
-    <description>Recent content on Ridhar&#39;s Site</description>
+    <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 16:59:20 +0700</lastBuildDate>
-    
-	<atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Oct 2018 16:59:20 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Database Quran Indonesia</title>
       <link>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</link>

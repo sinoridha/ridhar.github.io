@@ -1,6 +1,6 @@
 baseURL = "https://sinoridha.github.io/ridhar.github.io/"
 languageCode = "en-us"
-title = "Ridhar's Site"
+title = "Ridha R"
 theme = "hyde"
 publishDir= 'docs'
 disqusShortname = "ridhar-com"
