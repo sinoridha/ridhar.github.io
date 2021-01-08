@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ridhar Studio &middot; Ridha R</title>
+  <title>Object-oriented Design: Tell Don&#39;t Ask &middot; Ridha R</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ridhar.com/css/print.css" media="print">
@@ -51,16 +51,34 @@
 
     <main class="content container">
     <div class="post">
-  <h1>Ridhar Studio</h1>
-  <time datetime=2018-10-23T11:02:13&#43;0700 class="post-date">Tue, Oct 23, 2018</time>
-  <p>I build some app that exist on Play Store (Android).</p>
-<p><em>Check this:</em></p>
-<p><strong>Zikir Indonesia</strong>  - <a href="https://play.google.com/store/apps/details?id=com.zikirindonesia">https://play.google.com/store/apps/details?id=com.zikirindonesia</a>
-My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.</p>
-<p><strong>My IP Now</strong> - <a href="https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp">https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp</a>
-You need to remember your used IP?</p>
-<p><strong>JR Plan Poker</strong> - <a href="https://play.google.com/store/apps/details?id=com.ridhar.planningpoker">https://play.google.com/store/apps/details?id=com.ridhar.planningpoker</a>
-Nah, you are in an Agile/Scrum team, and tomorrow is sprint planning day ?</p>
+  <h1>Object-oriented Design: Tell Don&#39;t Ask</h1>
+  <time datetime=2021-01-09T06:04:13&#43;0700 class="post-date">Sat, Jan 9, 2021</time>
+  <p>&ldquo;Tell don&rsquo;t ask&rdquo; is one of the tricks to doing object-oriented design.</p>
+<p>So what it means? You should not &ldquo;ask&rdquo; something from an object to do a logical result, but you should &ldquo;tell&rdquo; the object to do it.</p>
+<pre><code>user = User.new('subscriber')
+
+if user.type == 'subscriber'
+  user_price = 10
+else
+  user_price = 50
+end
+</code></pre><p>It&rsquo;s better when</p>
+<pre><code>class User
+  def price
+    user.type == 'subscriber' ? 10 : 50
+  end
+end
+
+user = User.new('subscriber')
+user.price //10
+</code></pre><p>Is it as simple as that? Unfortunately not. While developing the real app we may find many types of objects, many application layers and you need to rethink to move the logic to object. Here is an example.</p>
+<pre><code>&lt;% if @user.type == &quot;subscriber&quot; %&gt;
+  @user.message_subscriber
+&lt;% else %&gt;
+  @user.message_non_subscriber
+&lt;% end %&gt;
+</code></pre><p>Are you going to move presentation logic to your user class?</p>
+<p>What do you think?</p>
 
 </div>
 

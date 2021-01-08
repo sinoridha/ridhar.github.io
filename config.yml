@@ -1,0 +1,18 @@
+baseURL: "https://sinoridha.github.io/ridhar.github.io/"
+languageCode: "en-us"
+title: "Ridha R"
+theme: "hyde"
+Params:
+  description: "blogs & thoughts"
+publishDir: "docs"
+disqusShortname: "ridhar-com"
+googleAnalytics: "UA-128028156-1"
+
+Menus:
+  main:
+    - Name: "About Me"
+      URL: "/about/"
+      Weight: 1
+    - Name: "Ridhar Studio"
+      URL: "/ridhar-studio/"
+      Weight: 2

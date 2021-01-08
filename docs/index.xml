@@ -5,30 +5,37 @@
     <link>https://sinoridha.github.io/ridhar.github.io/</link>
     <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 16:59:20 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Database Quran Indonesia</title>
-      <link>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</link>
-      <pubDate>Tue, 23 Oct 2018 16:59:20 +0700</pubDate>
+      <title>Object-oriented Design: Tell Don&#39;t Ask</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/</link>
+      <pubDate>Sat, 09 Jan 2021 06:04:13 +0700</pubDate>
       
-      <guid>https://sinoridha.github.io/ridhar.github.io/posts/database-quran-indonesia/</guid>
-      <description>Kali ini saya mau berbagi database Al-Quran Indonesia yang mana sangat bermanfaat bagi rekan para developer aplikasi yang akan membuat aplikasi Al Quran Indonesia. Database ini masih berupa SQL script (.sql) yang di dalamnya hanya melakukan proses create table dan insert saja.
-Membagi pengalaman saya dalam membuat aplikasi Zikir dan Quran, saat awal pengembangan aplikasi saya mengambil data Quran dari http://www.qurandatabase.org/. Akan tetapi masih ada beberapa kekurangan dimana ada harkat yang di baca panjang tapi tidak tertulis panjang, sepertinya layaknya Al-Quran cetakan Indonesia.</description>
+      <guid>https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/</guid>
+      <description>&amp;ldquo;Tell don&amp;rsquo;t ask&amp;rdquo; is one of the tricks to doing object-oriented design.
+So what it means? You should not &amp;ldquo;ask&amp;rdquo; something from an object to do a logical result, but you should &amp;ldquo;tell&amp;rdquo; the object to do it.
+user = User.new(&#39;subscriber&#39;) if user.type == &#39;subscriber&#39; user_price = 10 else user_price = 50 end It&amp;rsquo;s better when
+class User def price user.type == &#39;subscriber&#39; ? 10 : 50 end end user = User.</description>
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://sinoridha.github.io/ridhar.github.io/about/</link>
-      <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
+      <title>Object-oriented Design Mindset?</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/object-oriented-programing-mindset/</link>
+      <pubDate>Sun, 03 Jan 2021 14:41:07 +0700</pubDate>
       
-      <guid>https://sinoridha.github.io/ridhar.github.io/about/</guid>
-      <description>Me, Ridha Ramadhansyah, a muslim and software engineer base on Jakarta, Indonesia.
-You will find my write on this site.
-Find Me:
-sinoridha@gmail.com
-https://www.linkedin.com/in/ridharamadhansyah/
-https://github.com/sinoridha</description>
+      <guid>https://sinoridha.github.io/ridhar.github.io/object-oriented-programing-mindset/</guid>
+      <description>This topic is bothering me for years, how to make a programmer has an object-oriented design mindset?
+Popular codes I have seen during my working experience as a programmer, are it is procedural programming, wrote at an MVC framework, in a controller method. The controller becomes a massive code and hard to read. Sometimes I found there are “service pattern”, typically named with {domain}Service. Most of the time this service class becomes a big chunk of the instance method.</description>
+    </item>
+    
+    <item>
+      <title>Database Quran Indonesia</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/database-quran-indonesia/</link>
+      <pubDate>Tue, 23 Oct 2018 16:59:20 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/database-quran-indonesia/</guid>
+      <description>Kali ini saya mau berbagi database Al-Quran Indonesia yang mana sangat bermanfaat bagi rekan para developer aplikasi yang akan membuat aplikasi Al Quran Indonesia. Database ini masih berupa SQL script (.sql) yang di dalamnya hanya melakukan proses create table dan insert saja.
+Membagi pengalaman saya dalam membuat aplikasi Zikir dan Quran, saat awal pengembangan aplikasi saya mengambil data Quran dari http://www.qurandatabase.org/. Akan tetapi masih ada beberapa kekurangan dimana ada harkat yang di baca panjang tapi tidak tertulis panjang, sepertinya layaknya Al-Quran cetakan Indonesia.</description>
     </item>
     
     <item>
@@ -37,13 +44,22 @@ https://github.com/sinoridha</description>
       <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
       
       <guid>https://sinoridha.github.io/ridhar.github.io/ridhar-studio/</guid>
-      <description>Hi, I build some app that exist on Play Store (Android).
+      <description>I build some app that exist on Play Store (Android).
 Check this:
-Zikir Indonesia - https://play.google.com/store/apps/details?id=com.zikirindonesia
-My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.
-My IP Now - https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp
-You need to remember your used IP?
+Zikir Indonesia - https://play.google.com/store/apps/details?id=com.zikirindonesia My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.
+My IP Now - https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp You need to remember your used IP?
 JR Plan Poker - https://play.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/about/</link>
+      <pubDate>Tue, 23 Oct 2018 11:01:13 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/about/</guid>
+      <description>My name is Ridha Ramadhansyah, I a muslim, software engineer base on Jakarta, Indonesia.
+You will find my writes on this site.
+Find Me: sinoridha@gmail.com https://www.linkedin.com/in/ridharamadhansyah/ https://github.com/sinoridha</description>
     </item>
     
   </channel>

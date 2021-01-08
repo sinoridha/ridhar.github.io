@@ -34,16 +34,14 @@
     <div class="sidebar-about">
       <a href="https://sinoridha.github.io/ridhar.github.io/"><h1>Ridha R</h1></a>
       <p class="lead">
-       Any things that needs to be written 
+       blogs &amp; thoughts 
       </p>
     </div>
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="https://sinoridha.github.io/ridhar.github.io/">Home</a> </li>
-        <li><a href="https://sinoridha.github.io/ridhar.github.io//about">About</a> </li>
-        <li><a href="https://sinoridha.github.io/ridhar.github.io//ridhar-studio">Ridhar Studio</a> </li>
         
+        <li><a href="/ridhar.github.io/about/"> About Me </a></li><li><a href="/ridhar.github.io/ridhar-studio/"> Ridhar Studio </a></li>
       </ul>
     </nav>
 
@@ -55,39 +53,65 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
-    <a href="https://sinoridha.github.io/ridhar.github.io/posts/">Posts</a>
+    <a href="https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/">Object-oriented Design: Tell Don&#39;t Ask</a>
   </h1>
-  <time datetime="2018-10-23T16:59:20&#43;0700" class="post-date">Tue, Oct 23, 2018</time>
+  <time datetime="2021-01-09T06:04:13&#43;0700" class="post-date">Sat, Jan 9, 2021</time>
+  &ldquo;Tell don&rsquo;t ask&rdquo; is one of the tricks to doing object-oriented design.
+So what it means? You should not &ldquo;ask&rdquo; something from an object to do a logical result, but you should &ldquo;tell&rdquo; the object to do it.
+user = User.new('subscriber') if user.type == 'subscriber' user_price = 10 else user_price = 50 end It&rsquo;s better when
+class User def price user.type == 'subscriber' ? 10 : 50 end end user = User.
   
+  <div class="read-more-link">
+    <a href="/ridhar.github.io/tell-dont-ask/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
-    <a href="https://sinoridha.github.io/ridhar.github.io/about/">About Me</a>
+    <a href="https://sinoridha.github.io/ridhar.github.io/object-oriented-programing-mindset/">Object-oriented Design Mindset?</a>
   </h1>
-  <time datetime="2018-10-23T11:02:13&#43;0700" class="post-date">Tue, Oct 23, 2018</time>
-  Me, Ridha Ramadhansyah, a muslim and software engineer base on Jakarta, Indonesia.
-You will find my write on this site.
-Find Me:
-sinoridha@gmail.com
-https://www.linkedin.com/in/ridharamadhansyah/
-https://github.com/sinoridha
+  <time datetime="2021-01-03T14:41:07&#43;0700" class="post-date">Sun, Jan 3, 2021</time>
+  This topic is bothering me for years, how to make a programmer has an object-oriented design mindset?
+Popular codes I have seen during my working experience as a programmer, are it is procedural programming, wrote at an MVC framework, in a controller method. The controller becomes a massive code and hard to read. Sometimes I found there are “service pattern”, typically named with {domain}Service. Most of the time this service class becomes a big chunk of the instance method.
+  
+  <div class="read-more-link">
+    <a href="/ridhar.github.io/object-oriented-programing-mindset/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://sinoridha.github.io/ridhar.github.io/database-quran-indonesia/">Database Quran Indonesia</a>
+  </h1>
+  <time datetime="2018-10-23T16:59:20&#43;0700" class="post-date">Tue, Oct 23, 2018</time>
+  Kali ini saya mau berbagi database Al-Quran Indonesia yang mana sangat bermanfaat bagi rekan para developer aplikasi yang akan membuat aplikasi Al Quran Indonesia. Database ini masih berupa SQL script (.sql) yang di dalamnya hanya melakukan proses create table dan insert saja.
+Membagi pengalaman saya dalam membuat aplikasi Zikir dan Quran, saat awal pengembangan aplikasi saya mengambil data Quran dari http://www.qurandatabase.org/. Akan tetapi masih ada beberapa kekurangan dimana ada harkat yang di baca panjang tapi tidak tertulis panjang, sepertinya layaknya Al-Quran cetakan Indonesia.
+  
+  <div class="read-more-link">
+    <a href="/ridhar.github.io/database-quran-indonesia/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
     <a href="https://sinoridha.github.io/ridhar.github.io/ridhar-studio/">Ridhar Studio</a>
   </h1>
   <time datetime="2018-10-23T11:02:13&#43;0700" class="post-date">Tue, Oct 23, 2018</time>
-  Hi, I build some app that exist on Play Store (Android).
+  I build some app that exist on Play Store (Android).
 Check this:
-Zikir Indonesia - https://play.google.com/store/apps/details?id=com.zikirindonesia
-My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.
-My IP Now - https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp
-You need to remember your used IP?
+Zikir Indonesia - https://play.google.com/store/apps/details?id=com.zikirindonesia My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.
+My IP Now - https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp You need to remember your used IP?
 JR Plan Poker - https://play.
   
   <div class="read-more-link">
     <a href="/ridhar.github.io/ridhar-studio/">Read More…</a>
   </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://sinoridha.github.io/ridhar.github.io/about/">About Me</a>
+  </h1>
+  <time datetime="2018-10-23T11:01:13&#43;0700" class="post-date">Tue, Oct 23, 2018</time>
+  My name is Ridha Ramadhansyah, I a muslim, software engineer base on Jakarta, Indonesia.
+You will find my writes on this site.
+Find Me: sinoridha@gmail.com https://www.linkedin.com/in/ridharamadhansyah/ https://github.com/sinoridha
   
 </article>
 </div>
