@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Add Proper Index Table For Slow Query MSQL</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/add-proper-index-table-for-slow-query-mysql/</link>
+      <pubDate>Wed, 13 Jan 2021 05:02:45 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/add-proper-index-table-for-slow-query-mysql/</guid>
+      <description>For software engineer especially on the backend, might have faced issue slow query in the Production environment. This happens when the query that builds in the development environment only has small data set and shows good query time. Maybe first-time query landing on production environment everything just fine, just like a time bomb, production dataset getting bigger and the query time is slowing down and your alert system notifies you for the slow query, or database CPU got high.</description>
+    </item>
+    
+    <item>
       <title>Object-oriented Design: Tell Don&#39;t Ask</title>
       <link>https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/</link>
       <pubDate>Sat, 09 Jan 2021 06:04:13 +0700</pubDate>
