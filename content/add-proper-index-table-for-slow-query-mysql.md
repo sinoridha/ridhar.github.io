@@ -38,7 +38,7 @@ And you will get this
 
 
 See red mark on column `key` and the first row, it means your query look over table `p` without index, identified by `null` value.
-Then you see a red mark on column `rows` and the first row, for `p` table MySQL do examine `218404` row in the table, this is total data in table `p`.
+Then you see a red mark on column `rows` and the first row, for `p` table MySQL do examine `218404` row in the table, this is total data in table `p`. And on `Extra`, it tells that examines `p` table is using where condition not index.
 
 And you need to see a red mark on columns `ref` and the second row and this is what you are looking at. This is the table column that you need to add the index. In this example I add index for column `p.h_id` with index name `idx_h_id`.
 
@@ -49,7 +49,7 @@ Now if I run `EXPLAIN` again the result will be like this.
 ![Example image](../explain_after.png)
 
 See the `row` value decrease from `218404` to `10` and on table `p` row the new index `idx_h_id` is used in the query process.
-And the query time is faster now.
+And the query time is faster now. On `Extra` it tells that `p` table is now using index while scanning.
 
 ![Example image](../query_after.png)
 
