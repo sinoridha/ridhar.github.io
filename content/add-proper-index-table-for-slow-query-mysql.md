@@ -1,5 +1,5 @@
 ---
-title: "Add Proper Index Table For Slow Query MSQL"
+title: "Add Proper Index Table For Slow Query MYSQL"
 date: 2021-01-13T05:02:45+07:00
 draft: false
 ---
