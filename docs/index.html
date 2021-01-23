@@ -56,7 +56,13 @@
     <a href="https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/">Code That Breaking SRP</a>
   </h1>
   <time datetime="2021-01-23T09:12:36&#43;0700" class="post-date">Sat, Jan 23, 2021</time>
-  public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&quot;Valid Password&quot;.equals(phrase)) { Session.initialize(); // &lt;-- Doing something else than checking password return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : . - Listing 3-6
+  What is SRP? Single responsibility principle (SRP) states that a class or module should have one, and only one reasone to change.
+Robert Cecil Martin (2008) Clean Code, : .
+#1 public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&quot;Valid Password&quot;.equals(phrase)) { Session.initialize(); return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : .
+  
+  <div class="read-more-link">
+    <a href="/ridhar.github.io/code-that-breaking-srp/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
