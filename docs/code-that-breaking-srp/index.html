@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tags &middot; Ridha R</title>
+  <title>Code That Breaking SRP &middot; Ridha R</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ridhar.com/css/print.css" media="print">
@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://sinoridha.github.io/ridhar.github.io/tags/index.xml" rel="alternate" type="application/rss+xml" title="Ridha R" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Ridha R" />
 
   
 </head>
@@ -50,11 +50,49 @@
 </aside>
 
     <main class="content container">
-    <ul class="posts">
-<li>
-    <span><a href="https://sinoridha.github.io/ridhar.github.io/tags/mysql/">mysql</a> <time class="pull-right post-list" datetime="2021-01-13T05:02:45&#43;0700">Wed, Jan 13, 2021</time></span>
-  </li>
-</ul>
+    <div class="post">
+  <h1>Code That Breaking SRP</h1>
+  <time datetime=2021-01-23T09:12:36&#43;0700 class="post-date">Sat, Jan 23, 2021</time>
+  <pre><code>public class UserValidator {
+  private Cryptographer cryptographer;
+  public boolean checkPassword(String userName, String password) {
+    User user = UserGateway.findByName(userName);
+    if (user != User.NULL) {
+      String codedPhrase = user.getPhraseEncodedByPassword();
+      String phrase = cryptographer.decrypt(codedPhrase, password);
+      if (&quot;Valid Password&quot;.equals(phrase)) {
+        Session.initialize(); // &lt;-- Doing something else than checking password
+        return true;
+      }
+    }
+    return false;
+  }
+}
+</code></pre><p>Robert Cecil Martin (2008) Clean Code, : . - Listing 3-6</p>
+
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ridhar-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </main>
 
     

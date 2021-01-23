@@ -5,7 +5,17 @@
     <link>https://sinoridha.github.io/ridhar.github.io/</link>
     <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jan 2021 05:02:45 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code That Breaking SRP</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</link>
+      <pubDate>Sat, 23 Jan 2021 09:12:36 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</guid>
+      <description>public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&amp;quot;Valid Password&amp;quot;.equals(phrase)) { Session.initialize(); // &amp;lt;-- Doing something else than checking password return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : . - Listing 3-6</description>
+    </item>
+    
     <item>
       <title>Add Proper Index Table For Slow Query MYSQL</title>
       <link>https://sinoridha.github.io/ridhar.github.io/add-proper-index-table-for-slow-query-mysql/</link>

@@ -53,6 +53,13 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
+    <a href="https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/">Code That Breaking SRP</a>
+  </h1>
+  <time datetime="2021-01-23T09:12:36&#43;0700" class="post-date">Sat, Jan 23, 2021</time>
+  public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&quot;Valid Password&quot;.equals(phrase)) { Session.initialize(); // &lt;-- Doing something else than checking password return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : . - Listing 3-6
+  
+</article><article class="post">
+  <h1 class="post-title">
     <a href="https://sinoridha.github.io/ridhar.github.io/add-proper-index-table-for-slow-query-mysql/">Add Proper Index Table For Slow Query MYSQL</a>
   </h1>
   <time datetime="2021-01-13T05:02:45&#43;0700" class="post-date">Wed, Jan 13, 2021</time>

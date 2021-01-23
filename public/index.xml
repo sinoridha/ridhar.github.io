@@ -7,15 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Oct 2018 11:02:13 +0700</lastBuildDate>
-    
+
 	<atom:link href="http://sinoridha.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+
+
     <item>
       <title>About Me</title>
       <link>http://sinoridha.github.io/about/</link>
       <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
-      
+
       <guid>http://sinoridha.github.io/about/</guid>
       <description>Me, Ridha Ramadhansyah, a muslim and software engineer base on Jakarta, Indonesia.
 You will find my site write on this site.
@@ -24,12 +24,12 @@ sinoridha@gmail.com
 https://www.linkedin.com/in/ridharamadhansyah/
 https://github.com/sinoridhas</description>
     </item>
-    
+
     <item>
       <title>Ridhar Studio</title>
       <link>http://sinoridha.github.io/ridhar-studio/</link>
       <pubDate>Tue, 23 Oct 2018 11:02:13 +0700</pubDate>
-      
+
       <guid>http://sinoridha.github.io/ridhar-studio/</guid>
       <description>Hi, I build some app that exist on Play Stor (Android).
 Check this:
@@ -39,6 +39,6 @@ My IP Now - https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp
 You need to remember your used IP?
 JR Plan Poker - https://play.</description>
     </item>
-    
+
   </channel>
 </rss>

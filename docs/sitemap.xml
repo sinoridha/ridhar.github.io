@@ -3,7 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</loc>
+    <lastmod>2021-01-23T09:12:36+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sinoridha.github.io/ridhar.github.io/add-proper-index-table-for-slow-query-mysql/</loc>
+    <lastmod>2021-01-13T05:02:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sinoridha.github.io/ridhar.github.io/tags/mysql/</loc>
+    <lastmod>2021-01-13T05:02:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sinoridha.github.io/ridhar.github.io/</loc>
+    <lastmod>2021-01-13T05:02:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sinoridha.github.io/ridhar.github.io/tags/</loc>
     <lastmod>2021-01-13T05:02:45+07:00</lastmod>
   </url>
   
@@ -30,18 +50,6 @@
   <url>
     <loc>https://sinoridha.github.io/ridhar.github.io/about/</loc>
     <lastmod>2018-10-23T11:01:13+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sinoridha.github.io/ridhar.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sinoridha.github.io/ridhar.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sinoridha.github.io/ridhar.github.io/tags/</loc>
   </url>
   
 </urlset>
