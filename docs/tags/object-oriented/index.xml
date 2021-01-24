@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>object-oriented on Ridha R</title>
+    <link>https://sinoridha.github.io/ridhar.github.io/tags/object-oriented/</link>
+    <description>Recent content in object-oriented on Ridha R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Jan 2021 09:12:36 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/tags/object-oriented/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code That Breaking SRP</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</link>
+      <pubDate>Sat, 23 Jan 2021 09:12:36 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</guid>
+      <description>What is SRP? Single responsibility principle (SRP) states that a class or module should have one, and only one reasone to change.
+Robert Cecil Martin (2008) Clean Code, : .
+#1 public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&amp;quot;Valid Password&amp;quot;.equals(phrase)) { Session.initialize(); return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : .</description>
+    </item>
+    
+    <item>
+      <title>Object-oriented Design: Tell Don&#39;t Ask</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/</link>
+      <pubDate>Sat, 09 Jan 2021 06:04:13 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/tell-dont-ask/</guid>
+      <description>&amp;ldquo;Tell don&amp;rsquo;t ask&amp;rdquo; is one of the tricks to doing object-oriented design.
+So what it means? You should not &amp;ldquo;ask&amp;rdquo; something from an object to do a logical result, but you should &amp;ldquo;tell&amp;rdquo; the object to do it.
+user = User.new(&#39;subscriber&#39;) if user.type == &#39;subscriber&#39; user_price = 10 else user_price = 50 end It&amp;rsquo;s better when
+class User def price user.type == &#39;subscriber&#39; ? 10 : 50 end end user = User.</description>
+    </item>
+    
+    <item>
+      <title>Object-oriented Design Mindset?</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/object-oriented-programing-mindset/</link>
+      <pubDate>Sun, 03 Jan 2021 14:41:07 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/object-oriented-programing-mindset/</guid>
+      <description>This topic is bothering me for years, how to make a programmer has an object-oriented design mindset?
+Popular codes I have seen during my working experience as a programmer, are it is procedural programming, wrote at an MVC framework, in a controller method. The controller becomes a massive code and hard to read. Sometimes I found there are “service pattern”, typically named with {domain}Service. Most of the time this service class becomes a big chunk of the instance method.</description>
+    </item>
+    
+  </channel>
+</rss>

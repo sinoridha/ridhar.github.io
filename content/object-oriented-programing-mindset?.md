@@ -2,6 +2,8 @@
 title: "Object-oriented Design Mindset?"
 date: 2021-01-03T14:41:07+07:00
 draft: false
+tags:
+- object-oriented
 ---
 This topic is bothering me for years, how to make a programmer has an object-oriented design mindset?
 

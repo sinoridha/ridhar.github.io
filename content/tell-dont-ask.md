@@ -2,6 +2,8 @@
 title: "Object-oriented Design: Tell Don't Ask"
 date: 2021-01-09T06:04:13+07:00
 draft: false
+tags:
+- object-oriented
 ---
 
 "Tell don't ask" is one of the tricks to doing object-oriented design.

@@ -2,6 +2,9 @@
 title: "Code That Breaking SRP"
 date: 2021-01-23T09:12:36+07:00
 draft: false
+tags:
+- object-oriented
+- clean-code
 ---
 
 # What is SRP?
