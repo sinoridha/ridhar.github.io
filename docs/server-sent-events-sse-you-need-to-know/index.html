@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ridhar Studio &middot; Ridha R</title>
+  <title>Server Sent Events (SSE) You Need to Know &middot; Ridha R</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ridhar.com/css/print.css" media="print">
@@ -86,18 +86,42 @@
 
     <main class="content container">
     <div class="post">
-  <h1>Ridhar Studio</h1>
-  <time datetime=2018-10-23T11:02:13&#43;0700 class="post-date">Tue, Oct 23, 2018</time>
-  <p>I build some app that exist on Play Store (Android).</p>
-<p><em>Check this:</em></p>
-<p><strong>Zikir Indonesia</strong>  - <a href="https://play.google.com/store/apps/details?id=com.zikirindonesia">https://play.google.com/store/apps/details?id=com.zikirindonesia</a>
-My first app, that I build base on my needs of an zikr app that include a counter feature on each zikr. Now this App also have Al-Quran and translation and have a special feature, Khatam prediction date.</p>
-<p><strong>My IP Now</strong> - <a href="https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp">https://play.google.com/store/apps/details?id=com.com.ridhar.ipapp</a>
-You need to remember your used IP?</p>
-<p><strong>JR Plan Poker</strong> - <a href="https://play.google.com/store/apps/details?id=com.ridhar.planningpoker">https://play.google.com/store/apps/details?id=com.ridhar.planningpoker</a>
-Nah, you are in an Agile/Scrum team, and tomorrow is sprint planning day ?</p>
+  <h1>Server Sent Events (SSE) You Need to Know</h1>
+  <time datetime=2021-02-13T05:52:13&#43;0700 class="post-date">Sat, Feb 13, 2021</time>
+  <p>Server Sent Events (SSE) is like a common client-server HTTP request, instead of waiting for a response from the server, the client can get events during that time from the server.</p>
+<p><img src="../sse.png" alt="Example image"></p>
+<p>SEE use when :</p>
+<ul>
+<li>While thinking implement WebSocket, (communication will happen bi-directionally) but client no sent an event to the server.</li>
+<li>Want chunk response instead of waiting all process to be completed in one request</li>
+</ul>
+<p>When to dont use it</p>
+<ul>
+<li>Your client/browser is not compatible, check here for browser support <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#browser_compatibility</a></li>
+<li>The client needs to the sent event to the server, use WebSocket</li>
+<li>SSE have limit connection per browser per domain, max 6 tab.</li>
+</ul>
+<p>SEE better to be used on these cases</p>
+<ul>
+<li>Uploading bulk data and FE display the progression.</li>
+<li>Display dashboard data that need to re-fetch gradually.</li>
+</ul>
+<p>Caution use cases</p>
+<ul>
+<li>You need to update list of transactional data from transacation table
+<ul>
+<li>make sure you limit your,and add proper index, and always monitor query time due to the data is getting bigger.</li>
+</ul>
+</li>
+</ul>
+<p>Refrences:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events">https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events</a></li>
+</ul>
 
   <h3>Tags</h3>
+  
+      <a href="https://sinoridha.github.io/ridhar.github.io/tags/software-architecture/">software-architecture</a>
   
 </div>
 <h2>Comments</h2>

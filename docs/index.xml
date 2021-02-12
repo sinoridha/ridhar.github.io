@@ -6,7 +6,18 @@
     <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jan 2021 09:12:36 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 05:52:13 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Server Sent Events (SSE) You Need to Know</title>
+      <link>https://sinoridha.github.io/ridhar.github.io/server-sent-events-sse-you-need-to-know/</link>
+      <pubDate>Sat, 13 Feb 2021 05:52:13 +0700</pubDate>
+      
+      <guid>https://sinoridha.github.io/ridhar.github.io/server-sent-events-sse-you-need-to-know/</guid>
+      <description>Server Sent Events (SSE) is like a common client-server HTTP request, instead of waiting for a response from the server, the client can get events during that time from the server.
+SEE use when :
+ While thinking implement WebSocket, (communication will happen bi-directionally) but client no sent an event to the server. Want chunk response instead of waiting all process to be completed in one request  When to dont use it</description>
+    </item>
+    
     <item>
       <title>Code That Breaking SRP</title>
       <link>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</link>
