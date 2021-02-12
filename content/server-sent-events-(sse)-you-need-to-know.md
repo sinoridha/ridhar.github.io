@@ -13,10 +13,10 @@ Server Sent Events (SSE) is like a common client-server HTTP request, instead of
 ![Example image](../sse.png)
 
 SEE use when :
-* While thinking implement WebSocket, (communication will happen bi-directionally) but client no sent an event to the server.
+* While thinking implement WebSocket, (communication will happen bi-directionally) but client no need to sent an event to the server.
 * Want chunk response instead of waiting all process to be completed in one request
 
-When to dont use it
+When to don't use it
 * Your client/browser is not compatible, check here for browser support https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#browser_compatibility
 * The client needs to the sent event to the server, use WebSocket
 * SSE have limit connection per browser per domain, max 6 tab.
@@ -27,7 +27,7 @@ SEE better to be used on these cases
 
 Caution use cases
 * You need to update list of transactional data from transacation table
-  * make sure you limit your,and add proper index, and always monitor query time due to the data is getting bigger.
+  * make sure you limit your, add proper index, and always monitor query time due to the data is getting bigger.
 
 
 Refrences:

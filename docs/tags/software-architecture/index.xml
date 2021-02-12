@@ -15,7 +15,7 @@
       <guid>https://sinoridha.github.io/ridhar.github.io/server-sent-events-sse-you-need-to-know/</guid>
       <description>Server Sent Events (SSE) is like a common client-server HTTP request, instead of waiting for a response from the server, the client can get events during that time from the server.
 SEE use when :
- While thinking implement WebSocket, (communication will happen bi-directionally) but client no sent an event to the server. Want chunk response instead of waiting all process to be completed in one request  When to dont use it</description>
+ While thinking implement WebSocket, (communication will happen bi-directionally) but client no need to sent an event to the server. Want chunk response instead of waiting all process to be completed in one request  When to don&amp;rsquo;t use it</description>
     </item>
     
   </channel>
