@@ -26,8 +26,18 @@
       <div style="display: flex;flex-wrap:wrap;">
         {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
         {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-        <div class="tagbutton" style="font-size: small; flex: 0 1 auto;margin-right: 8px;">
-          <a href='{{ .RelPermalink }}' title="All pages with tag {{$name}}">{{$name}}</a>
+        <div class="tagbutton"
+          style="
+            font-size: smaller; flex: 0 1 auto;margin-right: 8px;
+            border-radius: 4px;
+            background-color: whitesmoke;
+            padding: 1px 3px 1px 3px;
+            color: black;
+            margin-bottom: 3px;
+            ">
+          <a href='{{ .RelPermalink }}' title="All pages with tag {{$name}}"
+            style="color: black;"
+          >{{$name}}</a>
           <!-- <sup>{{$cnt}}</sup> -->
           ({{$cnt}})
         </div>
