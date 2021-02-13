@@ -1,9 +1,13 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <a href="{{ .Site.BaseURL }}">
+        <h1>{{ .Site.Title }}</h1>
+      </a>
       <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
+        {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a
+          href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for
+        Jekyll.{{end}}
       </p>
     </div>
     <nav>
@@ -12,23 +16,27 @@
         <li><a href="{{ .Site.BaseURL }}/about">About</a> </li>
         <li><a href="{{ .Site.BaseURL }}/ridhar-studio">Ridhar Studio</a> </li> -->
         {{ range .Site.Menus.main -}}
-          <li><a href="{{ .URL}}"> {{ .Name }} </a></li>
+        <li><a href="{{ .URL}}"> {{ .Name }} </a></li>
         {{- end }}
       </ul>
     </nav>
-    <p>
-    <nav>Tags
-      {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+
+    <nav>
+      <div>Tags</div>
+      <div style="display: flex;flex-wrap:wrap">
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
         {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-          <div class="tagbutton">
-            <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{$name}}</a>
-            <!-- <sup>{{$cnt}}</sup> -->
-            ({{$cnt}})
-          </div>
+        <div class="tagbutton" style="font-size: small; flex: 0 1 auto;margin-right: 8px;">
+          <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{$name}}</a>
+          <!-- <sup>{{$cnt}}</sup> -->
+          ({{$cnt}})
+        </div>
         {{end}}
-      {{end}}
+        {{end}}
+      </div>
     </nav>
+    <br/>
+    <p>
+      {{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}
     </p>
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
-  </div>
 </aside>
