@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>clean-code on Ridha R</title>
-    <link>https://sinoridha.github.io/ridhar.github.io/tags/clean-code/</link>
+    <link>https://ridhar.com/tags/clean-code/</link>
     <description>Recent content in clean-code on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jan 2021 09:12:36 +0700</lastBuildDate><atom:link href="https://sinoridha.github.io/ridhar.github.io/tags/clean-code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 09:12:36 +0700</lastBuildDate><atom:link href="https://ridhar.com/tags/clean-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code That Breaking SRP</title>
-      <link>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</link>
+      <link>https://ridhar.com/code-that-breaking-srp/</link>
       <pubDate>Sat, 23 Jan 2021 09:12:36 +0700</pubDate>
       
-      <guid>https://sinoridha.github.io/ridhar.github.io/code-that-breaking-srp/</guid>
+      <guid>https://ridhar.com/code-that-breaking-srp/</guid>
       <description>What is SRP? Single responsibility principle (SRP) states that a class or module should have one, and only one reasone to change.
 Robert Cecil Martin (2008) Clean Code, : .
 #1 public class UserValidator { private Cryptographer cryptographer; public boolean checkPassword(String userName, String password) { User user = UserGateway.findByName(userName); if (user != User.NULL) { String codedPhrase = user.getPhraseEncodedByPassword(); String phrase = cryptographer.decrypt(codedPhrase, password); if (&amp;quot;Valid Password&amp;quot;.equals(phrase)) { Session.initialize(); return true; } } return false; } } Robert Cecil Martin (2008) Clean Code, : .</description>
