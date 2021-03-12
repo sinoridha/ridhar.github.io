@@ -1,5 +1,5 @@
 ---
-title: "Clean Function: Using Exception to Return Eror Code"
+title: "Clean Function: Using Exception to Return Error Code"
 date: 2021-03-12T09:01:49+07:00
 draft: false
 tags:
