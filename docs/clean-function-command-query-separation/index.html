@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>software-architecture &middot; Ridha R</title>
+  <title>Clean Function: Command Query Separation &middot; Ridha R</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ridhar.com/css/print.css" media="print">
@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ridhar.com/tags/software-architecture/index.xml" rel="alternate" type="application/rss+xml" title="Ridha R" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Ridha R" />
 
   
 </head>
@@ -130,11 +130,65 @@
     </p>
 </aside>
     <main class="content container">
-    <ul class="posts">
-<li>
-    <span><a href="https://ridhar.com/server-sent-events-sse-you-need-to-know/">Server Sent Events (SSE) You Need to Know</a> <time class="pull-right post-list" datetime="2021-02-13T05:52:13&#43;0700">Sat, Feb 13, 2021</time></span>
-  </li>
+    <div class="post">
+  <h1>Clean Function: Command Query Separation</h1>
+  <time datetime=2021-03-12T09:12:08&#43;0700 class="post-date">Fri, Mar 12, 2021</time>
+  <p><code>command</code> functions are:</p>
+<ul>
+<li>deleteSessionRegistry</li>
+<li>calculateMonthlyFee</li>
+<li>publishArticle</li>
+<li>sentEmailReport</li>
 </ul>
+<p><code>query</code> functions are:</p>
+<ul>
+<li>getName</li>
+<li>getNettPayroll</li>
+<li>getDiscount</li>
+</ul>
+<p>If you are programmers you should spot the differences. Command function should do something and the query
+function should answer something.</p>
+<p>But have you found a function like this</p>
+<pre><code>def calculate_nett_payroll
+  response_tax_service = get_user_tax(@user.id)
+
+  if response_tax_service.status == 200
+    @payroll_net = @payroll_gross - response_tax_service.body.tax_amount
+    return &quot;ok&quot;
+  end
+  return &quot;nok&quot;
+end
+</code></pre><p>Those are command query but returning something just like the query function, leads to confusion. So you must go with separating query from command function to prevent ambiguity.</p>
+<p>But how to handle the command function that functions caller to make sure the function process is going well? For
+example, a function that requests to a web service may return a response error. I have explained in my article
+<a href="https://ridhar.com/clean-function-using-exception-to-return-eror-code/">Clean Function: Using Exception to Return Eror Code</a>.</p>
+
+  <h3>Tags</h3>
+  
+      <a href="https://ridhar.com/tags/clean-code/">clean-code</a>
+  
+</div>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ridhar-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </main>
 
     

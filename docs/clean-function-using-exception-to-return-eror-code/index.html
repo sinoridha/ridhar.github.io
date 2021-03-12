@@ -64,7 +64,7 @@
             style="color: black;"
           >clean-code</a>
           
-          (2)
+          (3)
         </div>
         
          
@@ -143,9 +143,8 @@ check whether a success response, error response or timeout.</p>
   if response_tax_service.status == 200
     @payroll_net = @payroll_gross - response_tax_service.body.tax_amount
     return &quot;ok&quot;
-  else
-    return &quot;nok&quot;
   end
+  return &quot;nok&quot;
 end
 </code></pre><p>Function <code>calculate_nett_payroll</code> will return &ldquo;ok&rdquo; when processing gets data from tax service success and calculating the
 net payroll. If the response tax service is not 200 then the function will return the error code &ldquo;nok&rdquo;.</p>

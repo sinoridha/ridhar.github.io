@@ -6,7 +6,20 @@
     <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Mar 2021 09:01:49 +0700</lastBuildDate><atom:link href="https://ridhar.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 09:12:08 +0700</lastBuildDate><atom:link href="https://ridhar.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Function: Command Query Separation</title>
+      <link>https://ridhar.com/clean-function-command-query-separation/</link>
+      <pubDate>Fri, 12 Mar 2021 09:12:08 +0700</pubDate>
+      
+      <guid>https://ridhar.com/clean-function-command-query-separation/</guid>
+      <description>command functions are:
+ deleteSessionRegistry calculateMonthlyFee publishArticle sentEmailReport  query functions are:
+ getName getNettPayroll getDiscount  If you are programmers you should spot the differences. Command function should do something and the query function should answer something.
+But have you found a function like this
+def calculate_nett_payroll response_tax_service = get_user_tax(@user.id) if response_tax_service.status == 200 @payroll_net = @payroll_gross - response_tax_service.body.tax_amount return &amp;quot;ok&amp;quot; end return &amp;quot;nok&amp;quot; end Those are command query but returning something just like the query function, leads to confusion.</description>
+    </item>
+    
     <item>
       <title>Clean Function: Using Exception to Return Eror Code</title>
       <link>https://ridhar.com/clean-function-using-exception-to-return-eror-code/</link>

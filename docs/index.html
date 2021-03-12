@@ -64,7 +64,7 @@
             style="color: black;"
           >clean-code</a>
           
-          (2)
+          (3)
         </div>
         
          
@@ -132,6 +132,21 @@
     <main class="content container">
     <div class="posts">
 <article class="post">
+  <h1 class="post-title">
+    <a href="https://ridhar.com/clean-function-command-query-separation/">Clean Function: Command Query Separation</a>
+  </h1>
+  <time datetime="2021-03-12T09:12:08&#43;0700" class="post-date">Fri, Mar 12, 2021</time>
+  command functions are:
+ deleteSessionRegistry calculateMonthlyFee publishArticle sentEmailReport  query functions are:
+ getName getNettPayroll getDiscount  If you are programmers you should spot the differences. Command function should do something and the query function should answer something.
+But have you found a function like this
+def calculate_nett_payroll response_tax_service = get_user_tax(@user.id) if response_tax_service.status == 200 @payroll_net = @payroll_gross - response_tax_service.body.tax_amount return &quot;ok&quot; end return &quot;nok&quot; end Those are command query but returning something just like the query function, leads to confusion.
+  
+  <div class="read-more-link">
+    <a href="/clean-function-command-query-separation/">Read More…</a>
+  </div>
+  
+</article><article class="post">
   <h1 class="post-title">
     <a href="https://ridhar.com/clean-function-using-exception-to-return-eror-code/">Clean Function: Using Exception to Return Eror Code</a>
   </h1>

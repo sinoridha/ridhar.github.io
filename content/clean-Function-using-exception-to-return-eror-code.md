@@ -18,9 +18,8 @@ def calculate_nett_payroll
   if response_tax_service.status == 200
     @payroll_net = @payroll_gross - response_tax_service.body.tax_amount
     return "ok"
-  else
-    return "nok"
   end
+  return "nok"
 end
 ```
 
