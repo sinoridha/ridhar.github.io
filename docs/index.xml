@@ -6,7 +6,17 @@
     <description>Recent content on Ridha R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Feb 2021 05:52:13 +0700</lastBuildDate><atom:link href="https://ridhar.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 09:01:49 +0700</lastBuildDate><atom:link href="https://ridhar.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Function: Using Exception to Return Eror Code</title>
+      <link>https://ridhar.com/clean-function-using-exception-to-return-eror-code/</link>
+      <pubDate>Fri, 12 Mar 2021 09:01:49 +0700</pubDate>
+      
+      <guid>https://ridhar.com/clean-function-using-exception-to-return-eror-code/</guid>
+      <description>Experienced programmers must have faced cases where a process within function needs to be checked. Some programmers will create a function that returns the status of the process or returning an error code. For example, a function that sent a request to external web services, and the response of web services should check whether a success response, error response or timeout.
+def calculate_nett_payroll response_tax_service = get_user_tax(@user.id) if response_tax_service.status == 200 @payroll_net = @payroll_gross - response_tax_service.</description>
+    </item>
+    
     <item>
       <title>Server Sent Events (SSE) You Need to Know</title>
       <link>https://ridhar.com/server-sent-events-sse-you-need-to-know/</link>

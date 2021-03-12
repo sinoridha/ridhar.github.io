@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>404 Page not found &middot; Ridha R</title>
+  <title>Clean Function: Using Exception to Return Eror Code &middot; Ridha R</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ridhar.com/css/print.css" media="print">
@@ -130,8 +130,77 @@
     </p>
 </aside>
     <main class="content container">
-    <h1>404: Page not found</h1>
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="https://ridhar.com/">Head back home</a> to try finding it again.</p>
+    <div class="post">
+  <h1>Clean Function: Using Exception to Return Eror Code</h1>
+  <time datetime=2021-03-12T09:01:49&#43;0700 class="post-date">Fri, Mar 12, 2021</time>
+  <p>Experienced programmers must have faced cases where a process within function needs to be checked.
+Some programmers will create a function that returns the status of the process or returning an error code.
+For example, a function that sent a request to external web services, and the response of web services should
+check whether a success response, error response or timeout.</p>
+<pre><code>def calculate_nett_payroll
+  response_tax_service = get_user_tax(@user.id)
+
+  if response_tax_service.status == 200
+    @payroll_net = @payroll_gross - response_tax_service.body.tax_amount
+    return &quot;ok&quot;
+  else
+    return &quot;nok&quot;
+  end
+end
+</code></pre><p>Function <code>calculate_nett_payroll</code> will return &ldquo;ok&rdquo; when processing gets data from tax service success and calculating the
+net payroll. If the response tax service is not 200 then the function will return the error code &ldquo;nok&rdquo;.</p>
+<pre><code>if andi.calculate_tax == &quot;ok&quot;
+  if andi.calculate_nett_payroll == 'ok'
+    logger.info(&quot;Payroll of Andi is #{andi.payroll_net}&quot;)
+  else
+    logger.info(&quot;Payroll calculation net payroll error&quot;)
+  end
+else
+  logger.info(&quot;Payroll calculation tax error&quot;)
+end
+</code></pre><p>The caller of the function must check the error code first before he accesses the needed data <code>andi.payroll_net</code>.
+Not only function <code>calculate_nett_payroll</code> there are function <code>calculate_tax</code> that have same logic. Due to checking
+the error code of the function client need to make the nested structure.</p>
+<p>Robert C. Martin in his book Clean Code prefers to use exception instead of return error code. Here is the updated
+method of <code>calculate_nett_payroll</code> that used exception.</p>
+<pre><code>begin
+    ane.calculate_tax
+    ane.calculate_nett_payroll
+    logger.info(&quot;Payroll of Ane is #{ane.payroll_net}&quot;)
+rescue StandardError =&gt; e
+    logger.info(&quot;Payroll calculation error: #{e.message}&quot;)
+end
+</code></pre><p>You might spot the code become cleaner, less nested structure, and has less line of code. The happy path becomes more
+clear and straight forward, within begin and rescue, and so the negative path becomes much more simple.</p>
+<p>Checkout full example code in here <a href="https://github.com/sinoridha/function_prefer_exceptions_to_returning_error_code">https://github.com/sinoridha/function_prefer_exceptions_to_returning_error_code</a></p>
+<p>Or you can play in here <a href="https://repl.it/@sinoridha/Function-Prefer-Exceptions-to-returning-error-code">https://repl.it/@sinoridha/Function-Prefer-Exceptions-to-returning-error-code</a></p>
+
+  <h3>Tags</h3>
+  
+      <a href="https://ridhar.com/tags/clean-code/">clean-code</a>
+  
+</div>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ridhar-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </main>
 
     
