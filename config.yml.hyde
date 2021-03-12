@@ -1,0 +1,20 @@
+baseURL: "https://ridhar.com/"
+languageCode: "en-us"
+title: "Ridha R"
+theme: "book"
+taxonomies:
+  tag: tags
+Params:
+  description: "blogs & thoughts"
+  BookSection: "/"
+publishDir: "docs"
+disqusShortname: "ridhar-com"
+googleAnalytics: "UA-128028156-1"
+menus:
+  main:
+    - name: "About Me"
+      URL: "/about/"
+      Weight: 1
+    - name: "Ridhar Studio"
+      URL: "/ridhar-studio/"
+      Weight: 2
