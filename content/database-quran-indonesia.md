@@ -1,6 +1,8 @@
 ---
 title: "Database Quran Indonesia"
 date: 2018-10-23T16:59:20+07:00
+aliases:
+  - /posts/database-quran-indonesia/
 draft: false
 ---
 
